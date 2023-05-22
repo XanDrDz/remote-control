@@ -5,8 +5,9 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "start": "cross-env NODE_ENV=development nodemon --exec ts-node --esm index.ts",
-        "start:dev": "nodemon index.js",
+
+        "start": "ts-node --esm ./index.ts",
+        "start:dev": "cross-env NODE_ENV=development nodemon --exec ts-node --esm index.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Andrei Auchynnikau",
